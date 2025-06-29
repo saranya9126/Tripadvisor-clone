@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor-clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--categories-->
+    <div class="categories">
+        <!--head-->
+        <div class="header">
+            <!--left head-->
+            <div class="header_left">
+                <img class="header_left_img" src="images/tripadvisor.png" alt="">
+                <h1>Tripadvisor</h1>
+            </div>
+            <!--mid head-->
+            <div class="header_middle">
+                <button class="header_mid_butn">Discover</button>
+                <button class="header_mid_butn">Trip</button>
+                <button class="header_mid_butn">Review</button>
+                <a class="header_mid_link">Forums
+                    <div class="header_mid_linkline"></div>
+                </a>
+
+            </div>
+            <!--right head-->
+            <div class="header_right">
+                <div>
+                    <h4>🌐 | ING </h4>
+                </div>
+                <div>
+                    <button class="header_right_signbutn">Sign in</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Stream block -->
+    <!-- Stream toggles block -->
+    <div class="stream_blc">
+        <!-- Hidden Inputs First -->
+        <input type="radio" name="stream2" id="searchall" checked hidden>
+        <input type="radio" name="stream2" id="hotels" hidden>
+        <input type="radio" name="stream2" id="things" hidden>
+        <input type="radio" name="stream2" id="restaurants" hidden>
+        <input type="radio" name="stream2" id="flights" hidden>
+        <input type="radio" name="stream2" id="holiday" hidden>
+
+        <!-- Stream content + toggle buttons in visual order -->
+        <div class="stream_visual">
+            <div class="stream">
+                <h1 class="where">Where to?</h1>
+                <h1 class="stay">Stay somewhere great</h1>
+                <h1 class="fun">Do something fun</h1>
+                <h1 class="eat">Find places to eat</h1>
+                <h1 class="flight">Find the best flight</h1>
+                <h1 class="rent">Explore places to rent</h1>
+            </div>
+
+            <div class="stream2">
+                <label for="searchall" class="stream2_toggle">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Search all</span>
+                    <div class="underline"></div>
+                </label>
+
+                <label for="hotels" class="stream2_toggle">
+                    <i class="fa-solid fa-bed"></i>
+                    <span>Hotels</span>
+                    <div class="underline"></div>
+                </label>
+
+                <label for="things" class="stream2_toggle">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Things to do</span>
+                    <div class="underline"></div>
+                </label>
+
+                <label for="restaurants" class="stream2_toggle">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Restaurants</span>
+                    <div class="underline"></div>
+                </label>
+
+                <label for="flights" class="stream2_toggle">
+                    <i class="fa-solid fa-plane-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    <span>Flights</span>
+                    <div class="underline"></div>
+                </label>
+
+                <label for="holiday" class="stream2_toggle">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <span>Holiday Homes</span>
+                    <div class="underline"></div>
+                </label>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="searchbar_container">
+                <i class="fa-solid fa-magnifying-glass"
+                    style="color: #000000; padding-top: 5px; padding-bottom: 5px;"></i>
+                <input class="searchbar_input" type="text" placeholder="places to go,things to do,hotels" />
+                <button class="searchbar_btn">Search</button>
+            </div>
+        </div>
+        <div class="bookbox">
+            <div class="bookbox_img">
+                <img class="bookbox_img1" src="images/42.jpg">
+
+            </div>
+            <div class="bookbox_info">
+                <h1>Book the best part of your trip</h1>
+                <h5>Browse our selection of the best hotels</h5>
+                <button>Find things to do</button>
+            </div>
+
+        </div>
+        <div class="intrest">
+            <h2>Find things to do by interest</h2>
+            <h5>Whatever you're into, we’ve got it</h5>
+        </div>
+        <div class="intrest_imgs">
+            <div class="intrest_imgs_div">
+                <img class="intrest_imgs_img" src="images/caption.jpg" alt="outdoor.jpg">
+                <h2>Outdoor</h2>
+            </div>
+            <div class="intrest_imgs_div">
+                <img class="intrest_imgs_img" src="images/caption (1).jpg" alt="food.jpg">
+                <h2>Food</h2>
+            </div>
+            <div class="intrest_imgs_div">
+                <img class="intrest_imgs_img" src="images/caption (2).jpg" alt="culture.jpg">
+                <h2>Culture</h2>
+            </div>
+            <div class="intrest_imgs_div">
+                <img class="intrest_imgs_img" src="images/caption (3).jpg" alt="water.jpg">
+                <h2>Water</h2>
+            </div>
+        </div>
+        <div class="ad">
+            <img class="ad_img" src="images/14796161883010638296.png" alt="ad.jpg">
+        </div>
+        <div class="explore_title">
+            <h2>Explore experiences near Chennai</h2>
+            <h5>Discover unique activities</h5>
+        </div>
+        <div>
+            <div class="explore_contain">
+                <div class="explore_contain_div">
+                    <img class="explore_contain_img" src="images/caption (4).jpg" alt="">
+                    <div><i class="fa-solid fa-heart" style="color: #ffffff;"></i></div>
+                    <h2>Canvas and coastline cruise from albufeira to benagil</h2>
+                    <p>4.5 ⭐⭐⭐⭐ (206)</p>
+                    <h4>from ₹1,999 per adult</h4>
+                </div>
+                <div class="explore_contain_div">
+                    <img class="explore_contain_img" src="images/caption (5).jpg">
+                    <div><i class=" fa-solid fa-heart" style="color: #ffffff;"></i></div>
+
+                    <h2>Albufeira 1.5 hour off-road tour quad adventure tour</h2>
+                    <p>4.9 ⭐⭐⭐⭐⭐ (1.3k)</p>
+                    <h4>from ₹3,999 per adult</h4>
+                </div>
+                <div class="explore_contain_div">
+                    <img class="explore_contain_img" src="images/caption (6).jpg" alt="">
+                    <div><i class="fa-solid fa-heart" style="color: #ffffff;"></i></div>
+                    <h2>halfday tour with jeep safari</h2>
+                    <p>4.3 ⭐⭐⭐⭐ (682)</p>
+                    <h4>from ₹6,247 per adult</h4>
+                </div>
+                <div class="explore_contain_div">
+                    <img class="explore_contain_img" src="images/caption (7).jpg" alt="">
+                    <div><i class="fa-solid fa-heart" style="color: #ffffff;"></i></div>
+                    <h2>canvas and dolphin watching cruise from albufeira</h2>
+                    <p>5.0 ⭐⭐⭐⭐⭐ (106)</p>
+                    <h4>from ₹2,499 per adult</h4>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="ad">
+        <img class="ad_img" src="images/16013700836196080203.png" alt="ad2.jpg">
+    </div>
+
+    <div class="inspire_title">
+        <h2>Inspiration to get you going</h2>
+    </div>
+    <div class="inspire_contain">
+        <div class="inspire_contain_div">
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="footer-section">
+                        <h4>About Tripadvisor</h4>
+                        <a href="">About Us</a>
+                        <a href="">Privacy and Policies</a>
+                        <a href="">Trust & Safety</a>
+                        <a href="">Contact us</a>
+                        <a href="">Blog</a>
+                    </div>
+
+
+                    <div class="footer-section">
+                        <h4>Do Business With Us</h4>
+                        <a href="">Owners & Memberships</a>
+                            <a href="">iPhone App</a>
+                            <a href="">Android App</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Tripadvisor Sites</h4>
+                        <p>Book tours and attraction tickets on <a href="#">Viator</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-left">
+                        <img src="../assets/tripadvs.png" alt="Tripadvisor Logo" class="footer-logo" />
+                        <p>© 2025 Tripadvisor LLC All rights reserved.</p>
+                        <div class="footer-links">
+                            <a href="">Terms of Use</a>
+                            <a href="">Privacy and Cookies Statement</a>
+                            <a href="">Cookie consent</a>
+                            <a href="">Site Map</a>
+                            <a href="">Contact us</a>
+                        </div>
+                        <p class="footer-note">
+                            Tripadvisor LLC makes no guarantees for availability of prices advertised on our sites
+                        </p>
+                    </div>
+
+
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/Tripadvisor/"><i class="fa-brands fa-facebook"
+                                style="color: #000000;"></i></a>
+                        <a href="https://www.facebook.com/Tripadvisor/"><i class="fa-brands fa-x-twitter"
+                                style="color: #000000;"></i></i></a>
+                        <a href="https://www.instagram.com/tripadvisor/"><i class="fa-brands fa-instagram"
+                                style="color: #000000;"></i></a>
+                        <a href="https://www.youtube.com/TripAdvisor"><i class="fa-brands fa-youtube"
+                                style="color: #000000;"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
